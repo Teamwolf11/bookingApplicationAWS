@@ -1,6 +1,6 @@
 <?php 
         /* connect to databse */
-        $link = mysqli_connect('192.168.2.13', 'user1', 'password1234', 'bookings',3306);
+        $link = mysqli_connect('bookingdb.ccrr81h9vimc.us-east-1.rds.amazonaws.com', 'admin', 'riyamike', 'bookings',3306);
 
         // Check connection
         if($link === false){

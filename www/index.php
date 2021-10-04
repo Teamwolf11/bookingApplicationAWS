@@ -25,8 +25,8 @@
           <?php
             $db_host   = 'bookingdb.ccrr81h9vimc.us-east-1.rds.amazonaws.com';
             $db_name   = 'bookings';
-            $db_user   = 'user1';
-            $db_passwd = 'password1234';
+            $db_user   = 'admin';
+            $db_passwd = 'riyamike';
 
             $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
             $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
