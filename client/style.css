@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
+html {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    width: 1000px;
+    
+}
+
+.container {
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    
+}
+
+#header1 {
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 320px;
+}
+
+label {
+    display: inline-block;
+    width: 160px;
+    text-align: left;
+}
+
+.submitBooking, select.submitBooking {
+    padding: 5px;
+    width: 40%;
+    clear: both;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px 0 15px 0;
+    max-width: 250px;
+}
+
+.bookingSubmit {
+    background-color: #4CAF50;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
+    color: #fff;
+    width: 300px;
+    margin: 0 auto 20px auto;
+}
+
+.bookingSubmit:hover{
+    background-color:#fff;
+    color: #4CAF50;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.submitBooking:focus {
+    outline: none;
+    box-shadow: 2px 2px #4CAF50;
+}

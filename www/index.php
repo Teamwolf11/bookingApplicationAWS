@@ -23,7 +23,7 @@
 
           <!--call information from database:-->
           <?php
-            $db_host   = '192.168.2.13';
+            $db_host   = 'bookingdb.ccrr81h9vimc.us-east-1.rds.amazonaws.com';
             $db_name   = 'bookings';
             $db_user   = 'user1';
             $db_passwd = 'password1234';

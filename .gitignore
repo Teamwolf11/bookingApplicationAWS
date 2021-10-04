@@ -1,0 +1,7 @@
+.vagrant
+.aws
+._queryserver.sh
+._webserver.sh
+._dbserver.sh
+ubuntu-xenial-16.04-cloudimg-console.log
+.DS_Store
