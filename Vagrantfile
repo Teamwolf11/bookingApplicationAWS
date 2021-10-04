@@ -17,7 +17,7 @@ end
 Vagrant.configure("2") do |config|
     # All servers run Ubuntu
     config.vm.box = "ubuntu/xenial64"
-  
+    config.vm.boot_timeout = 3200
 
     # Define clientserver VM
     config.vm.define "clientserver" do |clientserver|
