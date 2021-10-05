@@ -17,7 +17,31 @@ end
 Vagrant.configure("2") do |config|
     # All servers run Ubuntu
     config.vm.box = "ubuntu/xenial64"
+    
     config.vm.boot_timeout = 3200
+
+    config.vm.provider :aws do |aws, override|
+
+      aws.region = "us-east-1"
+  
+      override.nfs.functional = false
+      override.vm.allowed_synced_folder_types = :rsync
+  
+      # keypair_name parameter to tell Amazon which public key to use.
+      aws.keypair_name = "booking-application-2021"
+      override.ssh.private_key_path = "~/.ssh/booking-application-2021.pem"
+  
+      aws.instance_type = "t2.micro"
+  
+      aws.security_groups = ["sg-0fe66a7f302b63ff5"]
+  
+      aws.availability_zone = "us-east-1a"
+      #aws.subnet_id = "subnet-3f711a72"
+  
+      aws.ami = "ami-036490d46656c4818"
+  
+      override.ssh.username = "ubuntu"
+    end
 
     # Define clientserver VM
     config.vm.define "clientserver" do |clientserver|
