@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
       aws.instance_type = "t2.micro"
   
       # List of security groups our VM should be in
-      aws.security_groups = ["sg-0fe66a7f302b63ff5, sg-081bdc55ac0b3a3a6"]
+      aws.security_groups = ["sg-0fe66a7f302b63ff5"]
   
       # Specific availability_zone
       aws.availability_zone = "us-east-1a"
